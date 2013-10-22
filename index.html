@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide-in Nav Demo</title>
+  <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+  <div class="hoverme">
+    <nav>
+      <a href="#" class="navitem">Nav</a>
+      <a href="#" class="navitem">Items</a>
+      <a href="#" class="navitem">Go</a>
+      <a href="#" class="navitem">Here</a>
+    </nav>
+    <div>Hover Here</div>
+  </div>
+  <main>
+    <h1>Slide-in Navigation</h1>
+    <p>I saw a little demo online that had an effect like this using jQuery to render menus that slide or fold in from off the rendered area, and I thought to myself, "Why not make it work in CSS".  Turns out it was really simple!</p>
+    <p>All it really takes is:</p>
+    <code>nav { height:0; overflow:hidden; transition:.7s ease height; }
+      <br>
+    .hoverme { background:orange; &:hover nav { height:20px; } }
+    </code>
+    <p>Neat, huh?</p>
+    <p>The same effect could be achieved using transition: to actually move the nav element onto the screen, but for the sake of lazy, I just adjusted the height.</p>
+  </main>
+</body>
+</html>
